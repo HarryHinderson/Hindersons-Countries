@@ -1,0 +1,90 @@
+namespace = hinder_events
+
+hinder_events.1 = {
+    type = country_event
+    placement = root
+    title = hinder_events.1.t
+    desc = hinder_events.1.d
+    flavor = hinder_events.1.f
+    
+    duration = 3
+
+    event_image = {
+        video = "gfx/event_pictures/unspecific_military_parade.bk2"
+    }
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    on_opened_soundeffect = "event:/SFX/Events/unspecific/gears_pistons"
+
+    trigger = {
+        #By decision
+    }
+
+    option = {      
+        name = hinder_events.1.a
+        default_option = yes
+        set_capital = STATE_BRANDENBURG
+        if = {
+            limit = {
+                NOT = { owns_entire_state_region = STATE_POMERANIA }
+            }
+            s:STATE_POMERANIA = {
+                add_claim = ROOT
+            }
+        }
+        if = {
+            limit = {
+                NOT = { owns_entire_state_region = STATE_SILESIA }
+            }
+            s:STATE_SILESIA = {
+                add_claim = ROOT
+            }
+        }
+        if = {
+            limit = {
+                NOT = { owns_entire_state_region = STATE_WEST_PRUSSIA }
+            }
+            s:STATE_WEST_PRUSSIA = {
+                add_claim = ROOT
+            }
+        }
+        if = {
+            limit = {
+                NOT = { owns_entire_state_region = STATE_EAST_PRUSSIA }
+            }
+            s:STATE_EAST_PRUSSIA = {
+                add_claim = ROOT
+            }
+        }
+        add_modifier = {
+            name = prussian_capital_restored
+            months = 36
+        }
+    }
+}
+
+#hinder_events.2 = {
+#    type = country_events
+#    placement = root
+#    title = hinder_events.2.t
+#    desc = hinder_events.2.d
+#    flavor = hinder_events.2.f
+#
+#    duration = 3
+#
+#    trigger = {
+#        any_primary_culture = {
+#            #Checks which culture has the most clout
+#            #hi
+#        }
+#        
+#        NOT = {
+#            has_variable = cultures_removed
+#        }
+#    }
+#
+#    #Save all removed primary cultures as variables
+#
+#}

@@ -1,0 +1,8 @@
+﻿prussian_capital_restored = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_prestige_add = 25
+}
+sick_man_of_europe = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_prestige_mult = -0.10
+}

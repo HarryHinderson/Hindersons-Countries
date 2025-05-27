@@ -1,0 +1,188 @@
+﻿NGF = {
+	use_culture_states = yes
+	
+	required_num_states = 5
+
+	ai_will_do = { always = no }
+	
+	possible = {
+		has_technology_researched = pan-nationalism
+		NOT = { c:PRU = THIS }
+	}
+}
+
+TSW = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+SGF = {
+	use_culture_states = yes
+	
+	required_num_states = 8
+
+	ai_will_do = { always = no }
+	
+	possible = {
+		has_technology_researched = pan-nationalism
+		NOT = { c:AUS = THIS }
+	}
+}
+
+NOU = { #Northumbria
+	states = { STATE_LANCASHIRE STATE_YORKSHIRE }
+
+	ai_will_do = { always = no }
+}
+
+PIE = { #Piedmont
+	states = { STATE_PIEDMONT }
+
+	ai_will_do = { always = no }
+}
+
+SAR = { #Sardinia
+	states = { STATE_SARDINIA }
+
+	ai_will_do = { always = no }
+}
+
+MOE = { #Morea
+	states = { STATE_PELOPONNESE }
+
+	ai_will_do = { always = no }
+}
+
+AUS = {
+	states = {
+		STATE_AUSTRIA
+		STATE_TYROL
+		STATE_BOHEMIA
+		STATE_MORAVIA
+		STATE_STYRIA
+		STATE_SOUTH_TYROL
+		STATE_SLOVENIA
+		STATE_ISTRIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+SIE = {
+	states = { STATE_SILESIA }
+	
+	ai_will_do = { always = no }
+}
+
+BRB = {
+	states = { STATE_BRANDENBURG }
+	
+	ai_will_do = { always = no }
+}
+
+TYR = {
+	states = { STATE_TYROL STATE_SOUTH_TYROL }
+	
+	ai_will_do = { always = no }
+}
+
+FRC = {
+	states = { STATE_FRANCONIA }
+	
+	ai_will_do = { always = no }
+}
+
+WES = {
+	states = { 
+		STATE_WESTPHALIA 
+	}
+		
+	ai_will_do = { always = no }
+}
+
+PRU = {
+	states = { 
+		STATE_WEST_PRUSSIA
+		STATE_EAST_PRUSSIA
+	}
+	
+	ai_will_do = { always = no }
+}
+
+SOM = {
+	states = {
+		STATE_SOMALILAND
+		STATE_OROMIA
+	}
+	possible = {
+		has_technology_researched = nationalism
+	}
+
+	ai_will_do = { always = no }
+}
+
+ZUL = {
+	states = { STATE_ZULULAND }
+
+	ai_will_do = { always = no }
+}
+
+TRN = {
+	states = { STATE_TRANSVAAL }
+
+	ai_will_do = { always = no }
+}
+
+ORA = {
+	states = { STATE_VRYSTAAT }
+
+	ai_will_do = { always = no }
+}
+
+NAL = {
+	states = { STATE_ZULULAND }
+
+	ai_will_do = { always = no }
+}
+
+STY = {
+	states = { STATE_STYRIA }
+
+	ai_will_do = { always = no }
+}
+
+
+DAL = {
+	states = { STATE_DALMATIA }
+
+	ai_will_do = { always = no }
+}
+
+SLA = {
+	states = { STATE_SLAVONIA }
+
+	ai_will_do = { always = no }
+}
+
+NOU = {
+	states = { STATE_LANCASHIRE STATE_YORKSHIRE }
+
+	ai_will_do = { always = no }
+}
+
+MOE = {
+	states = { STATE_PELOPONNESE }
+
+	ai_will_do = { always = no }
+}
+
+CRO = {
+	states = { 
+		STATE_CROATIA 
+		STATE_SLAVONIA 
+		STATE_DALMATIA 
+	}
+
+	ai_will_do = { always = no }
+}

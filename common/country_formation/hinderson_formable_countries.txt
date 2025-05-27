@@ -1,0 +1,76 @@
+﻿PRU = {
+	states = { 
+		STATE_WEST_PRUSSIA
+		STATE_EAST_PRUSSIA
+	}
+
+	required_states_fraction = 1
+	
+	ai_will_do = { always = yes }
+}
+
+ETH = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.25
+	
+	ai_will_do = { always = yes }
+}
+
+
+NGF = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.75
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+
+	ai_will_do = { always = yes }
+}
+
+SGF = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.75
+	
+	ai_will_do = { always = yes }
+}
+
+AUS = {
+	states = {
+		STATE_AUSTRIA
+	}
+
+	ai_will_do = { always = yes }
+}
+
+SAR = {
+	states = {
+		STATE_SARDINIA
+	}
+
+	ai_will_do = { always = yes }
+}
+
+SOM = {
+	states = {
+		STATE_SOMALILAND
+	}
+	possible = {
+		has_technology_researched = nationalism
+	}
+
+	ai_will_do = { always = yes }
+}
+
+CRO = {
+	states = {
+		STATE_CROATIA 
+		STATE_SLAVONIA 
+		STATE_DALMATIA
+	}
+
+	ai_will_do = { always = yes }
+}

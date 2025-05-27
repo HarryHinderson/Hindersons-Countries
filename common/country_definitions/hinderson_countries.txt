@@ -1,0 +1,202 @@
+﻿ASH = {
+	color = { 97 98 195 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { akan }
+	capital = STATE_GHANA
+	is_named_from_capital = yes
+}
+
+
+SLA = { #Slavonia
+	color = { 2 99 204}
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { croat }
+	capital = STATE_SLAVONIA
+	is_named_from_capital = yes
+}
+
+DAL = { #Dalmatia
+	color = { 12 200 252 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { croat north_italian }
+	capital = STATE_DALMATIA
+	is_named_from_capital = yes
+}
+
+SAR = { #Sardinia
+	color = { 117  146  167 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { north_italian }
+	capital = STATE_SARDINIA
+	is_named_from_capital = yes
+}
+
+PIE = { #Piedmont
+	color = { 170 17 11 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_PIEDMONT
+	is_named_from_capital = yes
+}
+
+NOU = { #Northumbria
+	color = { 201 70 30 }
+
+	country_type = recognized
+
+	tier = grand_principality
+
+	cultures = { british }
+	capital = STATE_LANCASHIRE
+}
+
+MOE = { #Morea
+	color = { 168 235 244 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { greek }
+	capital = STATE_PELOPONNESE
+	is_named_from_capital = yes
+}
+
+SOM = { #Somalia 
+	color = { 65 137 221 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { somali }
+	capital = STATE_SOMALILAND
+	is_named_from_capital = yes
+}
+
+PRU = { #Prussia
+	color = { 0 49 83 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { north_german }
+	capital = STATE_EAST_PRUSSIA
+}
+
+SIE = { #Silesia
+	color = { 255 206 8 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { north_german }
+	capital = STATE_SILESIA
+	is_named_from_capital = yes
+}
+
+BRB = { #Brandenburg
+	color = { 94 123 142 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { north_german }
+	capital = STATE_BRANDENBURG
+	is_named_from_capital = yes
+	
+}
+
+TYR = { #Tyrol
+	color = { 219 65 65 }
+	
+	country_type = recognized
+
+	tier = city_state
+	
+	cultures = { south_german north_italian }
+	capital = STATE_TYROL
+}
+
+STY = { #Styria
+	color = { 47 109 47 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { south_german }
+	capital = STATE_STYRIA
+	is_named_from_capital = yes
+}
+
+FRC = { #Franconia
+	color = { 206 60 35 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { south_german }
+	capital = STATE_FRANCONIA
+	is_named_from_capital = yes
+}
+
+
+AUS = { #Austria
+	color = { 211  220  240 }
+
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { south_german }
+	capital = STATE_AUSTRIA
+	is_named_from_capital = yes
+}
+
+TUR = {
+	color = { 170  206  162 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { turkish }
+	capital = STATE_ANKARA
+}
+
+WES = { #Westphalia
+	color = { 50 50 229 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { north_german }
+	capital = STATE_WESTPHALIA
+	is_named_from_capital = yes
+}

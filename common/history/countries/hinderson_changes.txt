@@ -1,0 +1,14 @@
+﻿COUNTRIES = {
+	c:PRU ?= {
+		set_capital = STATE_BRANDENBURG
+	}
+	c:EGY ?= {
+		change_infamy = 50
+	}
+	c:TUR ?= {
+		set_capital = STATE_EASTERN_THRACE
+	}
+	c:SAR ?= {
+		set_capital = STATE_PIEDMONT
+	}
+}

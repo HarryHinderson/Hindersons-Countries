@@ -1,0 +1,162 @@
+﻿MOE = { # Moesia
+	dynamic_country_name = { #Peleponnese
+		name = dyn_c_moe_greek
+		adjective = dyn_c_moe_greek_adj
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			OR = {
+				scope:actor = {
+					has_technology_researched = nationalism
+				}
+				AND = {
+					coa_def_subject_trigger = yes
+					NOT = {
+						scope:actor = {
+							is_subject_of = c:GRE
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+ASH = { # Ashanti
+	dynamic_country_name = { #Ghana
+		name = dyn_c_ash_republic
+		adjective = dyn_c_ash_republic_adj
+
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = { 
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law = law_type:law_parliamentary_republic
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_council_republic
+				}
+			}
+		}
+	}
+	dynamic_country_name = { #Gold Coast
+		name = dyn_c_ash_british
+		adjective = dyn_c_ash_british_adj
+
+		is_main_tag_only = yes
+		priority = 20
+	
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+}
+
+HDJ = { # Hedjaz
+	dynamic_country_name = {
+		name = dyn_c_hashemite_arabia
+		adjective = dyn_c_hashemite_arabia_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				owns_entire_state_region = STATE_NEJD
+				owns_entire_state_region = STATE_HEDJAZ
+			}
+		}
+	}
+}
+
+EGY = { # Egypt
+	dynamic_country_name = {
+		name = dyn_c_alawiyya_empire
+		adjective = dyn_c_alawiyya_empire_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				owns_entire_state_region = STATE_EASTERN_THRACE
+			}
+		}
+	}
+}
+
+ZUL = { # Zulu
+	dynamic_country_name = {
+		name = dyn_c_zululand
+		adjective = dyn_c_zululand_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				NOT = {
+					coa_absolute_monarchy_trigger = yes
+					has_law = law_type:law_peasant_levies
+				}
+			}
+		}
+	}
+}
+
+SAR = { # Sardinia
+	dynamic_country_name = {
+		name = dyn_c_sardinia
+		adjective = dyn_c_sardinia_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			scope:actor = {
+				NOT = {
+					owns_entire_state_region = STATE_PIEDMONT
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_sardinia_corsica
+		adjective = dyn_c_sardinia_corsica_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor = {
+				owns_entire_state_region = STATE_CORSICA
+				NOT = {
+					owns_entire_state_region = STATE_PIEDMONT
+				}
+			}
+		}
+	}
+}
+
+COR = { # Corsica
+	dynamic_country_name = {
+		name = dyn_c_corsica_sardinia
+		adjective = dyn_c_corsica_sardinia_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			scope:actor = {
+				owns_entire_state_region = STATE_SARDINIA
+			}
+		}
+	}
+}

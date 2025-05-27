@@ -1,0 +1,29 @@
+﻿capital_berlin = {
+	is_shown = {
+		exists = c:PRU
+		c:PRU = THIS
+		any_scope_state = {
+			NOR = {
+				state_region = s:STATE_BRANDENBURG
+				is_capital = yes
+			}
+		}
+	}
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_BRANDENBURG
+			is_capital = no
+			is_incorporated = yes
+			is_split_state = no
+		}
+	}
+	when_taken = {
+		trigger_event = {
+			id = hinder_events.1
+			popup = yes
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}
