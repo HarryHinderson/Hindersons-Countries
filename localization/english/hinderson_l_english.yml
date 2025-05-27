@@ -48,6 +48,6 @@
  capital_berlin_desc:0 "Prussia has been gutted as of late. Restoring its rightful historic capital shall be the first step in restoring its former glory."
  hinder_events.1.t:0 "Prussian Capital Restored"
  hinder_events.1.d:0 "Finally, Prussian rule has returned to the heartland of her power."
- hinder_events.1.f:0 "Insert a poem about how beautiful berlin is, or something."
+ hinder_events.1.f:0 "And with torchlight and gaslight, Berlin for once was all ablaze."
  hinder_events.1.a:0 "Gott mit uns!"
  prussian_capital_restored:0 "Prussian Capital Restored"
