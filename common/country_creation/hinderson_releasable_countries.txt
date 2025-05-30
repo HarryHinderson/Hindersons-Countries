@@ -1,4 +1,10 @@
-﻿NGF = {
+﻿RMA = { #Romanga
+	states = { STATE_ROMAGNA }
+
+	ai_will_do = { always = no }
+}
+
+NGF = {
 	use_culture_states = yes
 	
 	required_num_states = 5
@@ -38,6 +44,12 @@ NOU = { #Northumbria
 
 PIE = { #Piedmont
 	states = { STATE_PIEDMONT }
+
+	ai_will_do = { always = no }
+}
+
+BAN = { #Banat
+	states = { STATE_BANAT STATE_DELVIDEK }
 
 	ai_will_do = { always = no }
 }

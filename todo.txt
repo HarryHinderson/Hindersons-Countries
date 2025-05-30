@@ -9,8 +9,6 @@ Top Priority:
 Low Priority:
 - Logic for the Turkish capital to move to Ankara and back to Constantinople
 - Bohemomoravia/Czechia as a seperate tag from Bohemia
-- Banat
-- Romagna
 - Macedonia
 - Greater Poland/Posen
 - Falkland Islands/Islas Malvinas

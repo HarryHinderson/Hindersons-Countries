@@ -13,6 +13,35 @@
 @NZL_coa_offset = @[3/16] 
 @sm_fra = 0.16
 
+RMA = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+	textured_emblem = {
+		texture = "te_coa_romanga.dds"
+	}
+}
+
+BAN_communist = { #Communist Banat 
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+}
+
+BAN = { #Banat 
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = "white"
+		color2 = "white"
+	}
+}
 
 SAR_sardinia = { #Sardinian Sardinia
 	pattern = "pattern_solid.tga"
@@ -57,7 +86,6 @@ MOE = { #Morea
 		color2 = "blue"
 	}
 }
-
 
 SLA = { #Slavonia
 	pattern = "pattern_solid.tga"

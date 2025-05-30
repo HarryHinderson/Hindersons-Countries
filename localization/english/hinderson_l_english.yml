@@ -42,6 +42,10 @@
  NOU_ADJ:0 "Northumbrian"
  PIE:0 "Piedmont"
  PIE_ADJ:0 "Piedmontian"
+ BAN:0 "Banat"
+ BAN_ADJ:0 "Banatian"
+ RMA:0 "Romanga"
+ RMA_ADJ:0 "Romangan"
 
  #Journal/Event
  capital_berlin:0 "Restore the capital of Berlin"

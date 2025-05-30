@@ -1,4 +1,28 @@
-﻿ASH = {
+﻿RMA = { #Romanga
+	color = { 175 0 0 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_ROMAGNA
+	is_named_from_capital = yes
+}
+
+BAN = { #Banat
+	color = { 249 243 174 }
+	
+	country_type = recognized
+	
+	tier = grand_principality
+
+	cultures = { serb romanian hungarian }
+	capital = STATE_BANAT
+	is_named_from_capital = yes
+}
+
+ASH = {
 	color = { 97 98 195 }
 	
 	country_type = unrecognized
@@ -12,7 +36,7 @@
 
 
 SLA = { #Slavonia
-	color = { 2 99 204}
+	color = { 2 99 204 }
 
 	country_type = recognized
 
@@ -178,7 +202,7 @@ AUS = { #Austria
 	is_named_from_capital = yes
 }
 
-TUR = {
+TUR = { #Ottoman Empire
 	color = { 170  206  162 }
 	
 	country_type = recognized
