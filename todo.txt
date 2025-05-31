@@ -3,7 +3,6 @@
 - Gibraltar
 - Alsace
 - Lorraine
-- Moravia
 - Logic for the Turkish capital to move to Ankara and back to Constantinople
 - Bohemomoravia/Czechia as a seperate tag from Bohemia
 - Macedonia
