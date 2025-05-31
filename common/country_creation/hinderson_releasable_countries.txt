@@ -16,6 +16,19 @@ NRM = { #Normandy
 	ai_will_do = { always = no }
 }
 
+BOH = { #Bohemia
+	states = { STATE_BOHEMIA }
+
+	ai_will_do = { always = no }
+}
+
+MOA = { #Moravia
+	states = { STATE_MORAVIA }
+
+	ai_will_do = { always = no }
+}
+
+
 PRO = { #Provence
 	states = { STATE_PROVENCE }
 

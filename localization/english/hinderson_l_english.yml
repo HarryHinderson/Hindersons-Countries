@@ -56,6 +56,8 @@
  THU_ADJ:0 "Thuringian"
  ARO:0 "Aragon"
  ARO_ADJ:0 "Aragonese"
+ MOA:0 "Moravia"
+ MOA_ADJ:0 "Moravian"
 
  #Journal/Event
  capital_berlin:0 "Restore the capital of Berlin"

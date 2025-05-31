@@ -203,6 +203,16 @@ SIE = { #Silesia
 	}
 }
 
+MOA = { #Moravia  
+	flag_definition = {
+		coa = MOA
+		subject_canton = MOA
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = MOA_subject
+		priority = 1
+	}
+}
+
 BRB = { # Brandenburg
 	flag_definition = {
 		coa = BRB

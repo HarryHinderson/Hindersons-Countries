@@ -1,4 +1,16 @@
-﻿ARO = { #Aragon
+﻿MOA = { #Moravia
+	color = { 206 199 68 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { czech }
+	capital = STATE_MORAVIA
+	is_named_from_capital = yes
+}
+
+ARO = { #Aragon
 	color = { 206 82 28 }
 
 	country_type = recognized
@@ -7,6 +19,7 @@
 
 	cultures = { spanish }
 	capital = STATE_ARAGON
+	is_named_from_capital = yes
 }
 
 THU = { #Thuringia

@@ -149,6 +149,20 @@ SLA = { #Slavonia
 	}
 }
 
+MOA = { #Moravia
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+	textured_emblem = {
+		texture = "te_coa_moravia.dds"
+	}
+}
+
 TYR = { #Tyrol
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -311,12 +325,22 @@ BRB_subject = { #Brandenburg subject flag
 	}	
 }
 
-THU_subject = { #Thuringia subject flag
+MOA_subject = { #Moravia subject flag
 	pattern = "pattern_solid.tga"
 	color1 = "red"
 
 	textured_emblem = {
-		texture = "te_coa_thuringia.dds"
+		texture = "te_coa_brandenburg.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}	
+}
+
+MOA_subject = { #Moravia subject flag
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_moravia.dds"
 		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
 	}	
 }
