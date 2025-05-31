@@ -1,4 +1,51 @@
-﻿RMA = { #Romanga
+﻿ARO = { #Aragon
+	color = { 206 82 28 }
+
+	country_type = recognized
+
+	tier = kingdom
+
+	cultures = { spanish }
+	capital = STATE_ARAGON
+}
+
+THU = { #Thuringia
+	color = { 240 67 42 }
+
+	country_type = recognized
+
+	tier = kingdom
+
+	cultures = { french }
+	capital = STATE_SAXONY
+}
+
+NRM = { #Normandy
+	color = { 232 89 27 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { french }
+	capital = STATE_NORMANDY
+	is_named_from_capital = yes
+}
+
+PRO = { #Provence
+	color = { 94 175 200 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { occitan }
+	capital = STATE_PROVENCE
+	is_named_from_capital = yes
+}
+
+
+RMA = { #Romanga
 	color = { 175 0 0 }
 
 	country_type = recognized

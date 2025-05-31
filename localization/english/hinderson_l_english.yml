@@ -18,6 +18,8 @@
  dyn_c_sardinia_corsica_adj:0 "Sardinia-Corsican"
  dyn_c_corsica_sardinia:0 "Corsica-Sardinia"
  dyn_c_corsica_sardinia_adj:0 "Corsica-Sardinian"
+ dyn_c_libya:0 "Libya"
+ dyn_c_libya_adj:0 "Libyan"
  
  #Default names
  SIE:0 "Silesia"
@@ -46,6 +48,14 @@
  BAN_ADJ:0 "Banatian"
  RMA:0 "Romanga"
  RMA_ADJ:0 "Romangan"
+ PRO:0 "Provence"
+ PRO_ADJ:0 "Provencal"
+ NRM:0 "Normandy"
+ NRM_ADJ:0 "Norman"
+ THU:0 "Thuringia"
+ THU_ADJ:0 "Thuringian"
+ ARO:0 "Aragon"
+ ARO_ADJ:0 "Aragonese"
 
  #Journal/Event
  capital_berlin:0 "Restore the capital of Berlin"

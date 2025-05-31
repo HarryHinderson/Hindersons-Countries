@@ -13,6 +13,54 @@
 @NZL_coa_offset = @[3/16] 
 @sm_fra = 0.16
 
+ARO = { #Aragon
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_stripes_09.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+	}
+	textured_emblem = {
+		texture = "te_coa_aragon.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.33 0.5 } }
+	}
+}
+
+ARO_republic = { #Aragon Republic
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_stripes_09.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "black"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "red"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 }  }
+	}
+}
+
+PRO = { #Provence
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_stripes_09.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { rotation = 90 } 
+	}
+}
+
 RMA = {
 	pattern = "pattern_solid.tga"
 	color1 = "yellow"
@@ -186,6 +234,20 @@ BRB = { #Brandenburg
 	}
 }
 
+THU = { #Thuringia
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+	textured_emblem = {
+		texture = "te_coa_thuringia.dds"
+	}
+}
+
 SOM = { #Somalia
 	pattern = "pattern_solid.tga"
 	color1 = "blue_light"
@@ -249,6 +311,16 @@ BRB_subject = { #Brandenburg subject flag
 	}	
 }
 
+THU_subject = { #Thuringia subject flag
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_thuringia.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}	
+}
+
 SIE_subject = { #Silesia subject flag
 	pattern = "pattern_solid.tga"
 	color1 = "yellow"
@@ -287,4 +359,25 @@ SLA_subject = { #Slavonia subject flag
 		texture = "te_coa_slavonia.dds"
 		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
 	}	
+}
+
+ARO_subject = { #Aragon subject flag
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_aragon.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}	
+}
+
+SOM = { #Somalia subject flag
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		instance = { scale = { 0.7 0.7 } position = { 0.75 0.5 }  }
+	}
 }

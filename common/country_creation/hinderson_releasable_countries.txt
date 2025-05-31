@@ -1,4 +1,28 @@
-﻿RMA = { #Romanga
+﻿THU = { #Thuringia
+	provinces = { x66FE0A x5141A0 xD0C021 xC00A37 x51C021 }
+
+	ai_will_do = { always = no }
+}
+
+ARO = { #Aragon
+	states = { STATE_ARAGON }
+
+	ai_will_do = { always = no }
+}
+
+NRM = { #Normandy
+	states = { STATE_NORMANDY }
+
+	ai_will_do = { always = no }
+}
+
+PRO = { #Provence
+	states = { STATE_PROVENCE }
+
+	ai_will_do = { always = no }
+}
+
+RMA = { #Romanga
 	states = { STATE_ROMAGNA }
 
 	ai_will_do = { always = no }

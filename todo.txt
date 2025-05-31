@@ -1,14 +1,15 @@
-Top Priority:
 - Sicily & Naples
-- Thuringia
+- Find a way to make Thuringia formable
 - Gibraltar
 - Alsace
-- Provence
+- Lorraine
 - Moravia
-
-Low Priority:
 - Logic for the Turkish capital to move to Ankara and back to Constantinople
 - Bohemomoravia/Czechia as a seperate tag from Bohemia
 - Macedonia
 - Greater Poland/Posen
-- Falkland Islands/Islas Malvinas
+- Provence royal flag
+- Trebizond/Pontus
+- Austurias
+- Umbria
+- Marche
