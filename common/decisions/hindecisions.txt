@@ -62,13 +62,13 @@ greater_serbia = {
 	}
 }
 
-debug_prestige = {
-	possible = {
-		is_player = yes
-	}
-	when_taken = {
-		add_modifier = {
-			name = prussian_capital_restored
-		}
-	}
-}
+#debug_prestige = {
+#	possible = {
+#		is_player = yes
+#	}
+#	when_taken = {
+#		add_modifier = {
+#			name = prussian_capital_restored
+#		}
+#	}
+#}
