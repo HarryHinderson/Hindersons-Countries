@@ -284,3 +284,14 @@ WES = { #Westphalia
 	capital = STATE_WESTPHALIA
 	is_named_from_capital = yes
 }
+
+YUG = {
+	color = { 37 128 174 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	capital = STATE_NORTHERN_SERBIA 
+	cultures = { serb croat slovene bosniak bulgarian }
+}

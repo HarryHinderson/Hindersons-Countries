@@ -65,9 +65,9 @@ TRI = { # Tripolitania
 		priority = 0
 		
 		trigger = {
-			AND = {
-				is_unrecognized = no
-				scope:actor = {
+			scope:actor = {
+				AND = {
+					NOT = { is_country_type = unrecognized }
 					owns_entire_state_region = STATE_LIBYA
 				}
 			}
@@ -141,7 +141,11 @@ SAR = { # Sardinia
 		trigger = {
 			scope:actor = {
 				NOT = {
-					owns_entire_state_region = STATE_PIEDMONT
+					OR = {
+						owns_entire_state_region = STATE_PIEDMONT
+						owns_entire_state_region = STATE_SAVOY
+					}
+					
 				}
 			}
 		}

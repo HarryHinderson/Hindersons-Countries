@@ -74,3 +74,34 @@ CRO = {
 
 	ai_will_do = { always = yes }
 }
+
+SYR = {
+	states = {
+		STATE_SYRIA
+		STATE_ALEPPO
+		STATE_LEBANON
+		STATE_PALESTINE
+		STATE_TRANSJORDAN
+		STATE_DEIR_EZ_ZOR
+	}
+
+	required_states_fraction = 0.33
+
+	ai_will_do = { always = yes }
+}
+
+SER = {
+	states = {
+		STATE_SOUTHERN_SERBIA 
+		STATE_NORTHERN_SERBIA
+		STATE_BOSNIA
+		STATE_MONTENEGRO
+		STATE_DELVIDEK
+		STATE_DALMATIA
+		STATE_CROATIA
+		STATE_SLAVONIA
+		STATE_BANAT
+	}
+
+	ai_will_do = { always = yes }
+}

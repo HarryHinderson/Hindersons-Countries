@@ -85,7 +85,10 @@ SAR = { # Sardinia-Piedmont
 		trigger = { 
 			coa_def_communist_flag_trigger = yes
 			scope:actor = {
-				owns_entire_state_region = STATE_PIEDMONT
+				OR = {
+					owns_entire_state_region = STATE_PIEDMONT
+					owns_entire_state_region = STATE_SAVOY
+				}
 			}
 		}
 	}	
@@ -107,7 +110,10 @@ SAR = { # Sardinia-Piedmont
 		trigger = {
 			scope:actor = {
 				NOT = {
-					owns_entire_state_region = STATE_PIEDMONT
+					OR = {
+						owns_entire_state_region = STATE_PIEDMONT
+						owns_entire_state_region = STATE_SAVOY
+					}
 				}
 			}
 		}

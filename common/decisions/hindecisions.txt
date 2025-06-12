@@ -27,3 +27,48 @@
 		base = 100
 	}
 }
+
+#Proclaim Greater Serbia
+greater_serbia = {
+	is_shown = {
+		exists = c:SER
+		c:SER = this
+		NOT = { has_modifier = greater_serbia_achieved }
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+        any_scope_state = {
+            state_region = { is_homeland = serb }
+            count > 4
+        }
+        NOT = { has_modifier = greater_serbia_achieved }
+	}
+	when_taken = {
+		add_modifier = {
+            name = greater_serbia_achieved
+        }
+        if = {
+        	limit = {
+        		any_scope_state = {
+        			state_region = s:STATE_SKOPIA
+        		}
+        	}
+        	s:STATE_SKOPIA = {
+        		add_homeland = cu:serb
+        	}
+        	
+        }
+	}
+}
+
+debug_prestige = {
+	possible = {
+		is_player = yes
+	}
+	when_taken = {
+		add_modifier = {
+			name = prussian_capital_restored
+		}
+	}
+}

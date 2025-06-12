@@ -1,4 +1,4 @@
-namespace = hinder_events
+﻿namespace = hinder_events
 
 hinder_events.1 = {
     type = country_event
@@ -65,26 +65,199 @@ hinder_events.1 = {
     }
 }
 
-#hinder_events.2 = {
-#    type = country_events
-#    placement = root
-#    title = hinder_events.2.t
-#    desc = hinder_events.2.d
-#    flavor = hinder_events.2.f
-#
-#    duration = 3
-#
-#    trigger = {
-#        any_primary_culture = {
-#            #Checks which culture has the most clout
-#            #hi
-#        }
-#        
-#        NOT = {
-#            has_variable = cultures_removed
-#        }
-#    }
-#
-#    #Save all removed primary cultures as variables
-#
-#}
+hinder_events.2 = {
+    type = country_events
+    placement = root
+    title = hinder_events.2.t
+    desc = hinder_events.2.d
+    flavor = hinder_events.2.f
+
+    duration = 3
+
+    event_image = {
+        video = "gfx/event_pictures/unspecific_military_parade.bk2"
+    }
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    on_opened_soundeffect = "event:/SFX/Events/unspecific/gears_pistons"
+
+    trigger = {
+        exists = c:SER
+        c:SER = THIS
+        has_technology_researched = nationalism
+        any_scope_state = {
+            state_region = { is_homeland = serb }
+            count > 1
+        }
+    }
+    immediate = {
+        
+    }
+
+    option = {
+        name = hinder_events.2.a
+        default_option = yes
+        if = {
+            limit = {
+                NOT = { owns_entire_state_region = STATE_SOUTHERN_SERBIA }
+            }
+            s:STATE_SOUTHERN_SERBIA = {
+                add_claim = ROOT
+            }
+        }
+        if = {
+            limit = {
+                NOT = { owns_entire_state_region = STATE_NORTHERN_SERBIA }
+            }
+            s:STATE_NORTHERN_SERBIA = {
+                add_claim = ROOT
+            }
+        }
+        if = {
+            limit = {
+                NOT = { owns_entire_state_region = STATE_DALMATIA }
+            }
+            s:STATE_DALMATIA = {
+                add_claim = ROOT
+            }
+        }
+        if = {
+            limit = {
+                NOT = { owns_entire_state_region = STATE_SKOPIA }
+            }
+            s:STATE_SKOPIA = {
+                add_claim = ROOT
+            }
+        }
+        if = {
+            limit = {
+                NOT = { owns_entire_state_region = STATE_MONTENEGRO }
+            }
+            s:STATE_MONTENEGRO = {
+                add_claim = ROOT
+            }
+        }
+        if = {
+            limit = {
+                NOT = { owns_entire_state_region = STATE_BOSNIA }
+            }
+            s:STATE_BOSNIA = {
+                add_claim = ROOT
+            }
+        }
+        if = {
+            limit = {
+                NOT = { owns_entire_state_region = STATE_SLAVONIA }
+            }
+            s:STATE_SLAVONIA = {
+                add_claim = ROOT
+            }
+        }
+        if = {
+            limit = {
+                NOT = { owns_entire_state_region = STATE_BANAT }
+            }
+            s:STATE_BANAT = {
+                add_claim = ROOT
+            }
+        }
+        if = {
+            limit = {
+                NOT = { owns_entire_state_region = STATE_DELVIDEK }
+            }
+            s:STATE_DELVIDEK = {
+                add_claim = ROOT
+            }
+        }
+        if = {
+            limit = {
+                NOT = { owns_entire_state_region = STATE_CROATIA }
+            }
+            s:STATE_CROATIA = {
+                add_claim = ROOT
+            }
+        }
+    }
+}
+
+hinder_events.3 = {
+    type = country_events
+    placement = root
+    title = hinder_events.3.t
+    desc = hinder_events.3.d
+    flavor = hinder_events.3.f
+
+    duration = 3
+
+    event_image = {
+        video = "gfx/event_pictures/unspecific_military_parade.bk2"
+    }
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    on_opened_soundeffect = "event:/SFX/Events/unspecific/gears_pistons"
+
+    trigger = {
+        exists = c:CRO
+        c:CRO = THIS
+        has_technology_researched = nationalism
+        owns_entire_state_region = STATE_CROATIA
+        owns_entire_state_region = STATE_DALMATIA
+        owns_entire_state_region = STATE_SLAVONIA
+    }
+    immediate = {
+        unification_claims_effect = yes
+    }
+    option = {
+        name = hinder_events.3.a
+        default_option = yes
+    }
+}
+
+hinder_events.4 = {
+    type = country_events
+    hidden = yes
+
+    duration = 3
+
+    trigger = {
+        c:YUG ?= THIS
+    }
+    immediate = {
+        if = {
+            limit = {
+                OR = {
+                    was_formed_from = BUL 
+                    AND = {
+                        any_scope_state = {
+                            state_region = { is_homeland = bulgarian }
+                            count > 1
+                        }
+                    }
+                    
+                } 
+            }
+            s:STATE_NORTHERN_THRACE = {
+                add_claim = ROOT
+            }
+            s:STATE_BULGARIA = {
+                add_claim = ROOT
+            }
+            s:STATE_SKOPIA = {
+                add_claim = ROOT
+            }
+            s:STATE_DOBRUDJA = {
+                add_claim = ROOT
+            }
+            s:STATE_WESTERN_THRACE = {
+                add_claim = ROOT
+            }
+        }
+        else = {
+            remove_primary_culture = cu:bulgarian
+        }
+    }
+}

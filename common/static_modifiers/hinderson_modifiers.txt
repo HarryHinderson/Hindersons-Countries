@@ -2,7 +2,29 @@
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
 	country_prestige_add = 25
 }
-sick_man_of_europe = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_prestige_mult = -0.10
+greater_serbia_achieved = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_prestige_add = 25
+	state_radicalism_increases_violent_hostility_mult = 0.20
+	state_radicalism_increases_cultural_erasure_mult = 0.20
+	state_radicalism_increases_open_prejudice_mult = 0.20
+	state_radicalism_increases_second_rate_citizen_mult = 0.20
+	state_loyalists_from_political_movements_mult = 0.25
+	state_pop_support_movement_cultural_majority_mult = 0.40
+	state_pop_support_movement_cultural_minority_mult = 0.30
+	state_pop_support_movement_religious_majority_mult = 0.25
+	state_pop_support_movement_religious_minority_mult = 0.20
+}
+
+turkish_nation = {
+	state_radicalism_increases_violent_hostility_mult = 0.20
+	state_radicalism_increases_cultural_erasure_mult = 0.20
+	state_radicalism_increases_open_prejudice_mult = 0.20
+	state_pop_support_movement_cultural_majority_mult = 0.25
+	state_pop_support_movement_religious_majority_mult = -0.25
+}
+
+ankara_capital = {
+	state_pop_support_movement_cultural_majority_mult = 0.25
+	state_pop_support_movement_religious_majority_mult = -0.25
 }

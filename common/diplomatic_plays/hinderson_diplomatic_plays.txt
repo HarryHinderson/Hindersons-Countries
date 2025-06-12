@@ -1,0 +1,129 @@
+﻿dp_unify_yugoslavia = {
+	war_goal = unification
+	
+	requires_interest_marker = no
+	blocked_by_diplomatic_status = no
+	add_infamy_for_starting_initiator_wargoals = no
+	
+	texture = "gfx/interface/icons/war_goals/unify_germany.dds"
+	
+	selectable_in_lens = {
+		always = no
+	}
+	
+	possible = {
+		has_technology_researched = pan-nationalism
+		custom_tooltip = {
+			text = "NOT_FORMED_GS"
+			NOT = {
+				any_country = {
+					has_modifier = greater_serbia_achieved
+				}
+			}
+		}
+		NOT = {
+			AND = {
+				country_has_primary_culture = cu:bulgarian
+				OR = {
+					has_law = law_type:law_state_religion
+					has_law = law_type:law_ethnostate
+					has_law = law_type:law_national_supremacy
+				}
+			}
+		}
+	}
+	
+	on_weekly_pulse = {}
+	
+	on_war_begins = {}
+
+	on_war_end = {}
+}
+
+dp_leadership_yugoslavia = {
+	war_goal = unification_leadership
+	
+	requires_interest_marker = no
+	mirror_war_goal = yes
+	
+	texture = "gfx/interface/icons/war_goals/unify_germany.dds"
+	
+	selectable_in_lens = {
+		always = no
+	}	
+	
+	possible = {
+		has_technology_researched = pan-nationalism
+		custom_tooltip = {
+			text = "NOT_FORMED_GS"
+			NOT = {
+				any_country = {
+					has_modifier = greater_serbia_achieved
+				}
+			}
+		}
+		NOT = {
+			AND = {
+				country_has_primary_culture = cu:bulgarian
+				OR = {
+					has_law = law_type:law_state_religion
+					has_law = law_type:law_ethnostate
+					has_law = law_type:law_national_supremacy
+				}
+			}
+		}
+	}
+	
+	on_weekly_pulse = {}
+	
+	on_war_begins = {}
+
+	on_war_end = {}
+}
+
+dp_unify_arabia = {
+	war_goal = unification
+
+	requires_interest_marker = no
+	blocked_by_diplomatic_status = no
+	add_infamy_for_starting_initiator_wargoals = no
+	
+	texture = "gfx/interface/icons/war_goals/unify_germany.dds"
+	
+	selectable_in_lens = {
+		always = no
+	}
+	
+	possible = {
+		can_form_nation = ARA
+	}
+	
+	on_weekly_pulse = {}
+	
+	on_war_begins = {}
+
+	on_war_end = {}
+}
+
+dp_leadership_arabia = {
+	war_goal = unification
+
+	requires_interest_marker = no
+	mirror_war_goal = yes
+	
+	texture = "gfx/interface/icons/war_goals/unify_germany.dds"
+	
+	selectable_in_lens = {
+		always = no
+	}
+	
+	possible = {
+		can_form_nation = ARA
+	}
+	
+	on_weekly_pulse = {}
+	
+	on_war_begins = {}
+
+	on_war_end = {}
+}

@@ -235,3 +235,9 @@ CRO = {
 
 	ai_will_do = { always = no }
 }
+
+MON = {
+	states = { STATE_MONTENEGRO }
+
+	ai_will_do = { always = no }
+}
