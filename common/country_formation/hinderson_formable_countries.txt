@@ -96,3 +96,13 @@ SER = {
 
 	ai_will_do = { always = yes }
 }
+
+THR = {
+	states = {
+		STATE_WESTERN_THRACE
+		STATE_EASTERN_THRACE
+		STATE_NORTHERN_THRACE
+	}
+
+	ai_will_do = { always = yes }
+}

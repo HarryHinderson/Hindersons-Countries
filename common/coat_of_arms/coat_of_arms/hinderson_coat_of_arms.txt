@@ -135,6 +135,17 @@ MOE = { #Morea
 	}
 }
 
+THR = { #Thrace 
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = "black"
+		color2 = "black"
+	}
+}
+
 SLA = { #Slavonia
 	pattern = "pattern_solid.tga"
 	color1 = "blue"

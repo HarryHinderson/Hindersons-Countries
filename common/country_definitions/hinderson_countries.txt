@@ -295,3 +295,15 @@ YUG = {
 	capital = STATE_NORTHERN_SERBIA 
 	cultures = { serb croat slovene bosniak bulgarian }
 }
+
+THR = {
+	color = { 0 130 0 }
+
+	country_type = recognized 
+
+	tier = kingdom
+
+	capital = STATE_EASTERN_THRACE
+
+	cultures = { turkish greek bulgarian }
+}

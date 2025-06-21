@@ -241,3 +241,13 @@ MON = {
 
 	ai_will_do = { always = no }
 }
+
+THR = {
+	states = {
+		STATE_WESTERN_THRACE
+		STATE_EASTERN_THRACE
+		STATE_NORTHERN_THRACE
+	}
+
+	ai_will_do = { always = no }
+}

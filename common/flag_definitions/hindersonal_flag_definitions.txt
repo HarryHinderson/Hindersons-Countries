@@ -325,3 +325,12 @@ ASH = { # Ashanti
 		}
 	}
 }
+
+THR = { # Thrace 
+	flag_definition = {
+		coa = THR
+		subject_canton = THR
+		allow_overlord_canton = yes
+		priority = 1
+	}
+}
