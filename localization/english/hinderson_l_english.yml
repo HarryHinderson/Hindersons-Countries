@@ -60,6 +60,8 @@
  MOA_ADJ:0 "Moravian"
  THR:0 "Thrace"
  THR_ADJ:0 "Thracian"
+ RUM:0 "Rumelia"
+ RUM_ADJ:0 "Rumelian"
 
  #Journal/Event
  capital_berlin:0 "Restore the capital of Berlin"

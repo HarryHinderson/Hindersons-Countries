@@ -301,9 +301,33 @@ THR = {
 
 	country_type = recognized 
 
-	tier = kingdom
+	tier = grand_principality
 
 	capital = STATE_EASTERN_THRACE
 
 	cultures = { turkish greek bulgarian }
+}
+
+RUM = {
+	color = { 25 125 25 }
+
+	country_type = recognized 
+
+	tier = kingdom
+
+	capital = STATE_EASTERN_THRACE
+
+	cultures = { turkish albanian }
+}
+
+BUL = {
+	color = { 116  107  140 }
+
+	country_type = recognized
+
+	tier = kingdom
+
+	cultures = { bulgarian }
+	capital = STATE_BULGARIA
+	is_named_from_capital = yes
 }

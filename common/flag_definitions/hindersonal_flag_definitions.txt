@@ -334,3 +334,87 @@ THR = { # Thrace
 		priority = 1
 	}
 }
+
+RUM = { # Rumelia
+	flag_definition = {
+		coa = RUM
+		subject_canton = RUM
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = RUM_subject
+		priority = 1
+	}
+	flag_definition = {
+		coa = RUM_monarchy
+		subject_canton = RUM_monarchy
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = RUM_subject
+		priority = 5
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RUM
+		subject_canton = RUM
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = RUM_subject
+		priority = 20
+		trigger = {
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RUM_republic
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = RUM_republic_subject
+		priority = 10
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RUM_dictatorship
+		subject_canton = RUM_dictatorship
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = RUM_republic_subject
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RUM_theocracy
+		subject_canton = RUM_theocracy
+		priority = 20
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RUM_subject_GBR
+		allow_overlord_canton = yes
+		priority = 50
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RUM_subject
+		allow_overlord_canton = yes
+		overlord_canton_offset = { 0.01 0.015 }
+		overlord_canton_scale = { 0.48 0.47 }
+		priority = 50
+		trigger = {
+			coa_def_french_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RUM_subject_GBR
+		subject_canton = RUM
+		allow_overlord_canton = yes
+		priority = 50
+		trigger = {
+			coa_def_spanish_ensign_trigger = yes
+		}
+	}
+}
