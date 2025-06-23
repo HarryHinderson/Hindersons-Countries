@@ -124,3 +124,13 @@ RUM = {
 
 	ai_will_do = { always = yes }
 }
+
+MAC = {
+	states = {
+		STATE_WESTERN_THRACE
+		STATE_SKOPIA
+		STATE_MACEDONIA
+	}
+
+	ai_will_do = { always = yes }
+}

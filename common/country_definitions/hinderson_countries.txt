@@ -331,3 +331,15 @@ BUL = {
 	capital = STATE_BULGARIA
 	is_named_from_capital = yes
 }
+
+MAC = {
+	color = { 30 33 137 }
+
+	country_type = recognized
+
+	tier = kingdom
+
+	cultures = { greek }
+	capital = STATE_MACEDONIA
+	is_named_from_capital = yes
+}

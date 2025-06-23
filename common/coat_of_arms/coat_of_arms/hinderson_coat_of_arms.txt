@@ -406,7 +406,7 @@ ARO_subject = { #Aragon subject flag
 	}	
 }
 
-SOM = { #Somalia subject flag
+SOM_subject = { #Somalia subject flag
 	pattern = "pattern_solid.tga"
 	color1 = "blue_light"
 
@@ -555,4 +555,23 @@ RUM_subject_GBR = {
 		color2 = "white"
 		instance = { scale = { 0.20 0.20 } position = { 0.83 0.50 } }
 	}
+}
+
+MAC = { #Macedonian flag
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_vergina_sun.dds"
+	}
+}
+
+MAC_subject = { #Macedonia subject flag
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_vergina_sun.dds"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}	
 }

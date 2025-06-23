@@ -267,3 +267,13 @@ RUM = {
 
 	ai_will_do = { always = no }
 }
+
+MAC = {
+	states = {
+		STATE_WESTERN_THRACE
+		STATE_SKOPIA
+		STATE_MACEDONIA
+	}
+
+	ai_will_do = { always = no }
+}

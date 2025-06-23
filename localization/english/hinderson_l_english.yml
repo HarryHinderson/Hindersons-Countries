@@ -62,6 +62,8 @@
  THR_ADJ:0 "Thracian"
  RUM:0 "Rumelia"
  RUM_ADJ:0 "Rumelian"
+ MAC:0 "Macedonia"
+ MAC_ADJ:0 "Macedonian"
 
  #Journal/Event
  capital_berlin:0 "Restore the capital of Berlin"
