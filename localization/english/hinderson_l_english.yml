@@ -64,6 +64,12 @@
  RUM_ADJ:0 "Rumelian"
  MAC:0 "Macedonia"
  MAC_ADJ:0 "Macedonian"
+ ALS:0 "Alsace"
+ ALS_ADJ:0 "Alsatian"
+ LOR:0 "Lorraine"
+ LOR_ADJ:0 "Lorrainian"
+ GEN:0 "Genoa"
+ GEN_ADJ:0 "Genoan"
 
  #Journal/Event
  capital_berlin:0 "Restore the capital of Berlin"

@@ -315,7 +315,7 @@ RUM = {
 
 	tier = kingdom
 
-	capital = STATE_EASTERN_THRACE
+	capital = STATE_NORTHERN_THRACE
 
 	cultures = { turkish albanian }
 }
@@ -341,5 +341,38 @@ MAC = {
 
 	cultures = { greek }
 	capital = STATE_MACEDONIA
+	is_named_from_capital = yes
+}
+
+ALS = {
+	color = { 242 54 23 }
+
+	country_type = recognized
+
+	tier = principality
+	capital = STATE_ALSACE_LORRAINE
+	cultures = { alemannic }
+	is_named_from_capital = yes
+}
+
+LOR = {
+	color = { 244 229 115 }
+
+	country_type = recognized
+
+	tier = principality
+	capital = STATE_LORRAINE
+	cultures = { french }
+	is_named_from_capital = yes
+}
+
+GEN = {
+	color = { 181 32 2 }
+
+	country_type = recognized
+
+	tier = kingdom
+	capital = STATE_PIEDMONT
+	cultures = { north_italian }
 	is_named_from_capital = yes
 }

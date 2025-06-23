@@ -1,4 +1,23 @@
-﻿THU = { #Thuringia
+﻿GEN = { #Genoa
+	provinces = { x54728A x5F6BAA x904061 }
+
+	ai_will_do = { always = no }
+}
+
+
+ALS = { #Alsace
+	provinces = { xCC3250 x6E4891 }
+
+	ai_will_do = { always = no }
+}
+
+LOR = { #Lorraine
+	provinces = { xF0C0A0 x4899A2 x3080E0 xB080E0 x7FC1E6 x282DCC x70BFA0 xC5F13A }
+
+	ai_will_do = { always = no }
+}
+
+THU = { #Thuringia
 	provinces = { x66FE0A x5141A0 xD0C021 xC00A37 x51C021 }
 
 	ai_will_do = { always = no }

@@ -1,8 +1,8 @@
 - Sicily & Naples
 - Find a way to make Thuringia formable
 - Gibraltar
-- Alsace
-- Lorraine
+- Add the Lorraine cross to the flag of alsace
+- Fix the flag of Lorraine
 - Logic for the Turkish capital to move to Ankara and back to Constantinople
 - Bohemomoravia/Czechia as a seperate tag from Bohemia
 - Greater Poland/Posen
@@ -13,3 +13,5 @@
 - Marche
 - Skopia
 - Kosovo
+- Bermuda
+- Belize
