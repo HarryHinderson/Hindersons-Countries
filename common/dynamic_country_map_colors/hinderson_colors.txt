@@ -1,0 +1,9 @@
+﻿turkish_republic = {
+	color = "turkish_republic_red"
+
+	possible = {
+		exists = c:TUR
+		THIS = c:TUR
+		has_modifier = turkish_nation
+	}
+}

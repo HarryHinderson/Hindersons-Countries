@@ -557,7 +557,7 @@ RUM_subject_GBR = {
 	}
 }
 
-MAC = { #Macedonian flag
+MACedonia = { #Macedonian flag
 	pattern = "pattern_solid.tga"
 	color1 = "blue"
 
@@ -566,7 +566,7 @@ MAC = { #Macedonian flag
 	}
 }
 
-MAC_subject = { #Macedonia subject flag
+MACedonia_subject = { #Macedonia subject flag
 	pattern = "pattern_solid.tga"
 	color1 = "blue"
 

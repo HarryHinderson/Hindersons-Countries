@@ -84,13 +84,7 @@ hinder_events.2 = {
     on_opened_soundeffect = "event:/SFX/Events/unspecific/gears_pistons"
 
     trigger = {
-        exists = c:SER
-        c:SER = THIS
-        has_technology_researched = nationalism
-        any_scope_state = {
-            state_region = { is_homeland = serb }
-            count > 1
-        }
+        #By decision
     }
     immediate = {
         
@@ -201,12 +195,7 @@ hinder_events.3 = {
     on_opened_soundeffect = "event:/SFX/Events/unspecific/gears_pistons"
 
     trigger = {
-        exists = c:CRO
-        c:CRO = THIS
-        has_technology_researched = nationalism
-        owns_entire_state_region = STATE_CROATIA
-        owns_entire_state_region = STATE_DALMATIA
-        owns_entire_state_region = STATE_SLAVONIA
+        #By decision
     }
     immediate = {
         unification_claims_effect = yes
@@ -259,5 +248,89 @@ hinder_events.4 = {
         else = {
             remove_primary_culture = cu:bulgarian
         }
+    }
+}
+
+hinder_events.5 = {
+    type = country_event
+    placement = root
+    title = hinder_events.5.t
+    desc = hinder_events.5.d
+    
+    duration = 3
+
+    event_image = {
+        video = "gfx/event_pictures/unspecific_military_parade.bk2"
+    }
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    on_opened_soundeffect = "event:/SFX/Events/unspecific/gears_pistons"
+
+    trigger = {
+        #By decision
+    }
+
+    option = {      
+        name = hinder_events.5.a
+        default_option = yes
+        set_capital = STATE_ANKARA
+        add_modifier = {
+            name = ankara_capital
+        }
+    }
+}
+
+hinder_events.6 = {
+    type = country_event
+    placement = root
+    title = hinder_events.6.t
+    desc = hinder_events.6.d
+    
+    duration = 3
+
+    event_image = {
+        video = "gfx/event_pictures/unspecific_military_parade.bk2"
+    }
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    on_opened_soundeffect = "event:/SFX/Events/unspecific/gears_pistons"
+
+    trigger = {
+        #Completing Turkish Nation journal
+    }
+
+    option = {      
+        add_modifier = {
+            name = turkish_nation
+        }
+        every_state_region = {
+            limit = {
+                AND = {
+                    is_homeland = cu:turkish
+                    any_scope_state = {
+                        owner = {
+                            save_scope_as = turkCountry
+                        }
+                        AND = {
+                            culture_percent_state = {
+                                target = cu:turkish
+                                value < 0.3
+                            }
+                            NOT = {
+                                cu:turkish = {
+                                    is_primary_culture_of = scope:turkCountry
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            remove_homeland = cu:turkish
+        }
+        unification_claims_effect = yes
     }
 }

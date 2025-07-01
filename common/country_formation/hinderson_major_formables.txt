@@ -53,6 +53,9 @@
 			}
 		}	
 	}
+	can_be_formation_candidate = {
+		country_rank >= rank_value:major_power
+	}
 }
 
 #Yugoslavia
@@ -88,6 +91,9 @@ YUG = {
 				}
 			}
 		}
+	}
+	can_be_formation_candidate = {
+		country_rank >= rank_value:minor_power
 	}
 }
 
@@ -125,6 +131,10 @@ ARA = {
 		has_technology_researched = pan-nationalism
 		country_or_subject_owns_entire_state_region = STATE_HEDJAZ
 		country_or_subject_owns_entire_state_region = STATE_PALESTINE
+	}
+
+	can_be_formation_candidate = {
+		country_rank >= rank_value:minor_power
 	}
 }
 
@@ -173,6 +183,9 @@ BHT = {
 	possible = {
 		has_technology_researched = pan-nationalism
 	}
+	can_be_formation_candidate = {
+		country_rank >= rank_value:minor_power
+	}
 }
 
 #Indonesia
@@ -205,6 +218,9 @@ IDN = {
 
 	possible = {
 		has_technology_researched = pan-nationalism
-
+	}
+	
+	can_be_formation_candidate = {
+		country_rank >= rank_value:minor_power
 	}
 }

@@ -28,6 +28,38 @@
 	}
 }
 
+capital_ankara = {
+	is_shown = {
+		exists = c:TUR
+		c:TUR = THIS
+		any_scope_state = {
+			NOR = {
+				state_region = s:STATE_ANKARA
+				is_capital = yes
+			}
+		}
+		has_modifier = turkish_nation
+	}
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_ANKARA
+			is_capital = no
+			is_incorporated = yes
+			is_split_state = no
+		}
+		has_modifier = turkish_nation
+	}
+	when_taken = {
+		trigger_event = {
+			id = hinder_events.5
+			popup = yes
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
 #Proclaim Greater Serbia
 greater_serbia = {
 	is_shown = {
@@ -65,13 +97,55 @@ greater_serbia = {
 	}
 }
 
-#debug_prestige = {
-#	possible = {
-#		is_player = yes
-#	}
-#	when_taken = {
-#		add_modifier = {
-#			name = prussian_capital_restored
-#		}
-#	}
-#}
+greater_serb_ambition = {
+	is_shown = {
+        exists = c:SER
+        c:SER = THIS
+        has_technology_researched = nationalism
+        hidden_trigger = {
+			NOT = { has_variable = greater_serb_ambition_taken }
+		}
+    }
+    possible = {
+		any_scope_state = {
+            state_region = { is_homeland = serb }
+            count > 1
+        }
+    }
+    when_taken = {
+    	set_variable = {
+			name = greater_serb_ambition_taken
+			value = yes
+		}
+    	trigger_event = {
+			id = hinder_events.2
+			popup = yes
+		}
+    }
+}
+
+greater_croat_ambition = {
+	is_shown = {
+		exists = c:CRO
+        c:CRO = THIS
+        has_technology_researched = nationalism
+        hidden_trigger = {
+			NOT = { has_variable = greater_croat_ambition_taken }
+		}
+	}
+	possible = {
+		owns_entire_state_region = STATE_CROATIA
+        owns_entire_state_region = STATE_DALMATIA
+        owns_entire_state_region = STATE_SLAVONIA
+	}
+	when_taken = {
+		set_variable = {
+			name = greater_croat_ambition_taken
+			value = yes
+		}
+    	trigger_event = {
+			id = hinder_events.3
+			popup = yes
+		}
+    }
+}

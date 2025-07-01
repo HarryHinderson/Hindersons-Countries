@@ -1,17 +1,4 @@
-﻿on_monthly_pulse_country = {
-    on_actions = {
-        hinderson_on_monthly_pulse_country
-    }
-}
-
-hinderson_on_monthly_pulse_country = {
-	events = {
-		hinder_events.2
-		hinder_events.3
-	}
-}
-
-on_country_formed = {
+﻿on_country_formed = {
 	on_actions = {
 		hinderson_on_country_formed
 	}

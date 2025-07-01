@@ -183,3 +183,76 @@ COR = { # Corsica
 		}
 	}
 }
+
+TUR = { # Turkey
+	dynamic_country_name = {
+		name = dyn_c_anatolia
+		adjective = dyn_c_anatolia_adj
+
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				NOT = {
+					has_modifier = turkish_nation
+				}
+				any_scope_state = {
+					NOT = {
+						region = sr:region_anatolia
+					}
+					count < 3
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_ottoman_empire
+		adjective = dyn_c_ottoman_empire_adj
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				NOT = {
+					has_modifier = turkish_nation
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_sublime_state
+		adjective = dyn_c_sublime_state_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			scope:actor = {
+				NOT = {
+					has_modifier = turkish_nation
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_ottomany
+		adjective = dyn_c_ottomany_adj
+
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			scope:actor = {
+				has_law = Law_type:law_council_republic
+				has_law = Law_type:law_multicultural
+				NOT = {
+					has_modifier = turkish_nation
+				}
+			}
+		}
+	}
+}

@@ -20,6 +20,12 @@
  dyn_c_corsica_sardinia_adj:0 "Corsica-Sardinian"
  dyn_c_libya:0 "Libya"
  dyn_c_libya_adj:0 "Libyan"
+ dyn_c_anatolia:0 "Anatolia"
+ dyn_c_anatolia_adj:0 "Anatolian"
+ dyn_c_sublime_state:0 "The Sublime State"
+ dyn_c_sublime_state_adj:0 "Sublime"
+ dyn_c_ottomany:0 "Ottomany"
+ dyn_c_ottomany_adj:0 "Ottomen"
  
  #Default names
  SIE:0 "Silesia"
@@ -73,7 +79,7 @@
 
  #Journal/Event
  capital_berlin:0 "Restore the capital of Berlin"
- capital_berlin_desc:0 "Prussia has been gutted as of late. Restoring its rightful historic capital shall be the first step in restoring its former glory."
+ capital_berlin_desc:0 "[COUNTRY.GetName] has been gutted as of late. Restoring its rightful historic capital shall be the first step in restoring its former glory."
  hinder_events.1.t:0 "Prussian Capital Restored"
  hinder_events.1.d:0 "Finally, Prussian rule has returned to the heartland of her power."
  hinder_events.1.f:0 "And with torchlight and gaslight, Berlin for once was all ablaze."
@@ -83,6 +89,10 @@
  hinder_events.2.d:0 "Now that we are in a position of strength, the time has come to unite all Serbian people under one banner."
  hinder_events.2.f:0 "Croatia... Montenegro... how silly."
  hinder_events.2.a:0 "We are all Serbs."
+ greater_serb_ambition:0 "Greater Serbian Ambitions"
+ greater_serb_ambition_desc:0 "Greater Serbia is just within reach. Now is the time to proclaim our intentions to unite all Serbs."
+ greater_croat_ambition:0 "Greater Croatian Ambitions"
+ greater_croat_ambition_desc:0 "Greater Croatia is just within reach. Now is the time to proclaim our intentions to unite all Croatians."
  greater_serbia:0 "Proclaim Greater Serbia"
  greater_serbia_desc:0 "Let it be known that the Serbian peoples are finally united under one banner."
  greater_serbia_achieved:0 "Greater Serbia"
@@ -91,8 +101,15 @@
  hinder_events.3.f:0 "For too long have the historical lands of Croatia been unjustly occupied and looted by foreign powers."
  hinder_events.3.a:0 "We are all Croat."
  turkish_nation:0 "The Turkish Nation"
+ je_turkish_nation:0 "The Turkish Nation"
+ je_turkish_nation_reason:0 "As the [COUNTRY.GetName] evolves, its national identity is called into question. Given particular circumstances, it may reform itself into a Turkish nation-state."
  ankara_capital:0 "A Turkish Capital"
- NOT_FORMED_GS:0 "Greater Serbia has NOT been formed."
+ NOT_FORMED_GS:0 "Greater Serbia has not been formed."
+ hinder_events.5.t:0 "The New Capital"
+ hinder_events.5.a:0 "A new Turkey rises!"
+ hinder_events.5.d:0 "Rather than the old Imperial capital, it has been decided to move to a more centralized location so our government may truly represent the Turkish people."
+ capital_ankara:0 "Move the capital to Ankara"
+ capital_ankara_desc:0 "The capital remaining at the center of the Porte's power is a relic of the past. As Turkey looks to the future, it must look inwards and pick a new capital."
 
  #Diplomatic Plays
  dp_unify_yugoslavia:0 "Unify Yugoslavia"

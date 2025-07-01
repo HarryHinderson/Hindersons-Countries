@@ -1,0 +1,83 @@
+je_turkish_nation = {
+
+	group = je_group_historical_content
+
+	is_shown_when_inactive = {
+		exists = c:TUR
+		c:TUR = THIS
+		NOT = { has_modifier = turkish_nation }
+	}
+	possible = {
+		has_technology_researched = nationalism
+	}
+	complete = {
+		has_revolution = no
+		OR = {
+			AND = {
+				OR = {
+					c:TUR = {
+						OR = {
+							has_law = Law_type:law_presidential_republic
+							has_law = Law_type:law_parliamentary_republic
+							has_law = Law_type:law_council_republic
+						}
+						OR = {
+							OR = {
+								has_law = Law_type:law_total_separation
+								has_law = Law_type:law_freedom_of_conscience
+							}
+							NOT = {
+								country_or_subject_owns_entire_state_region = STATE_HEDJAZ
+							}
+						}
+					}
+					c:TUR = {
+						OR = {
+							has_law = Law_type:law_total_separation
+							AND = {
+								has_law = Law_type:law_freedom_of_conscience
+								NOT = {
+									country_or_subject_owns_entire_state_region = STATE_HEDJAZ
+								}
+							}
+						}
+					}
+				}
+				OR = {
+					AND = {
+						primary_cultures_percent_country >= 0.45
+						has_law = Law_type:law_ethnostate
+					}
+					AND = {
+						primary_cultures_percent_country >= 0.5
+						has_law = Law_type:law_national_supremacy
+					}
+					AND = {
+						primary_cultures_percent_country >= 0.55
+						has_law = Law_type:law_racial_segregation
+					}
+					AND = {
+						primary_cultures_percent_country >= 0.6
+						has_law = Law_type:law_cultural_exclusion
+					}
+					AND = {
+						primary_cultures_percent_country >= 0.65
+						has_law = Law_type:law_multicultural
+					}
+				}
+			}
+			c:TUR = {
+				has_law = Law_type:law_state_atheism
+				NOT = {
+					has_law = Law_type:law_multicultural
+				}
+			}
+		}
+	}
+	on_complete = {
+		trigger_event = {
+			id = hinder_events.6
+			popup = yes
+		}
+	}
+}

@@ -3,7 +3,6 @@
 - Gibraltar
 - Add the Lorraine cross to the flag of alsace
 - Fix the flag of Lorraine
-- Logic for the Turkish capital to move to Ankara and back to Constantinople
 - Bohemomoravia/Czechia as a seperate tag from Bohemia
 - Greater Poland/Posen
 - Provence royal flag
