@@ -110,6 +110,10 @@
  hinder_events.5.d:0 "Rather than the old Imperial capital, it has been decided to move to a more centralized location so our government may truly represent the Turkish people."
  capital_ankara:0 "Move the capital to Ankara"
  capital_ankara_desc:0 "The capital remaining at the center of the Porte's power is a relic of the past. As Turkey looks to the future, it must look inwards and pick a new capital."
+ hinder_events.6:0 "The Tuskish Nation"
+ hinder_events.a:0 "Hurrah!"
+ hinder_events.d:0 "The country is now reborn as a nation state for the Turkish people."
+ hinder_events.f:0 "My mortal body will turn to dust, but the Turkish nation will last forever."
 
  #Diplomatic Plays
  dp_unify_yugoslavia:0 "Unify Yugoslavia"

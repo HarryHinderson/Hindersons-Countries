@@ -312,17 +312,14 @@ hinder_events.6 = {
                 AND = {
                     is_homeland = cu:turkish
                     any_scope_state = {
-                        owner = {
-                            save_scope_as = turkCountry
-                        }
                         AND = {
                             culture_percent_state = {
                                 target = cu:turkish
                                 value < 0.3
                             }
-                            NOT = {
-                                cu:turkish = {
-                                    is_primary_culture_of = scope:turkCountry
+                            owner = {
+                                NOT = {
+                                    country_has_primary_culture = cu:turkish
                                 }
                             }
                         }

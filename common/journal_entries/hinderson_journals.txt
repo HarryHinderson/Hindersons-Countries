@@ -1,4 +1,4 @@
-je_turkish_nation = {
+﻿je_turkish_nation = {
 
 	group = je_group_historical_content
 
