@@ -331,3 +331,34 @@ hinder_events.6 = {
         unification_claims_effect = yes
     }
 }
+
+hinder_events.7 = {
+    type = country_event
+    placement = root
+    title = hinder_events.5.t
+    desc = hinder_events.5.d
+    
+    duration = 3
+
+    event_image = {
+        video = "gfx/event_pictures/unspecific_military_parade.bk2"
+    }
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    on_opened_soundeffect = "event:/SFX/Events/unspecific/gears_pistons"
+
+    trigger = {
+        #By decision
+    }
+
+    option = {      
+        name = hinder_events.7.a
+        default_option = yes
+        set_capital = STATE_EASTERN_THRACE
+        remove_modifier = {
+            name = ankara_capital
+        }
+    }
+}

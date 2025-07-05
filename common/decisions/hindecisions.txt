@@ -149,3 +149,34 @@ greater_croat_ambition = {
 		}
     }
 }
+
+capital_constantinople = {
+	is_shown = {
+		exists = c:TUR
+		c:TUR = THIS
+		any_scope_state = {
+			NOR = {
+				state_region = s:STATE_EASTERN_THRACE
+				is_capital = yes
+			}
+		}
+	}
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_EASTERN_THRACE
+			is_capital = no
+			is_incorporated = yes
+			is_split_state = no
+		}
+		coa_monarchy_trigger = yes
+	}
+	when_taken = {
+		trigger_event = {
+			id = hinder_events.7
+			popup = yes
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}

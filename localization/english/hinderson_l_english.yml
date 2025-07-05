@@ -26,7 +26,10 @@
  dyn_c_sublime_state_adj:0 "Sublime"
  dyn_c_ottomany:0 "Ottomany"
  dyn_c_ottomany_adj:0 "Ottomen"
- 
+ dyn_c_vietnam:0 "Vietnam"
+ dyn_c_vietnam_adj:0 "Vietnamese"
+ HUB_NAME_STATE_EASTERN_THRACE_city_istanbul
+
  #Default names
  SIE:0 "Silesia"
  SIE_ADJ:0 "Silesian"
@@ -102,7 +105,7 @@
  hinder_events.3.a:0 "We are all Croat."
  turkish_nation:0 "The Turkish Nation"
  je_turkish_nation:0 "The Turkish Nation"
- je_turkish_nation_reason:0 "As the [COUNTRY.GetName] evolves, its national identity is called into question. Given particular circumstances, it may reform itself into a Turkish nation-state."
+ je_turkish_nation_reason:0 "As [COUNTRY.GetName] evolves, its national identity is called into question. Given particular circumstances, it may reform itself into a Turkish nation-state."
  ankara_capital:0 "A Turkish Capital"
  NOT_FORMED_GS:0 "Greater Serbia has not been formed."
  hinder_events.5.t:0 "The New Capital"
@@ -111,9 +114,14 @@
  capital_ankara:0 "Move the capital to Ankara"
  capital_ankara_desc:0 "The capital remaining at the center of the Porte's power is a relic of the past. As Turkey looks to the future, it must look inwards and pick a new capital."
  hinder_events.6:0 "The Tuskish Nation"
- hinder_events.a:0 "Hurrah!"
- hinder_events.d:0 "The country is now reborn as a nation state for the Turkish people."
- hinder_events.f:0 "My mortal body will turn to dust, but the Turkish nation will last forever."
+ hinder_events.6.a:0 "Hurrah!"
+ hinder_events.6.d:0 "The country is now reborn as a nation state for the Turkish people."
+ hinder_events.6.f:0 "My mortal body will turn to dust, but the Turkish nation will last forever."
+ capital_constantinople:0 "Move the capital to Constantinople"
+ capital_constantinople_desc:0 "Moving the capital to the old center of the empire will increase our prestige."
+ hinder_events.7:0 "An Imperial Capital"
+ hinder_events.7.a:0 "Long live the eternal state!"
+ hinder_events.7.d:0 "Founded by the Roman emperor Constantine, Constantinople is the only city glorious enough to house our exalted Sultan."
 
  #Diplomatic Plays
  dp_unify_yugoslavia:0 "Unify Yugoslavia"
